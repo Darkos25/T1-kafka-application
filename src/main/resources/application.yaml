@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: T1-kafka-producer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/t1KafkaDB
+    username: postgres
+    password: 46ab96ca
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+kafka:
+  bootstrap-servers: localhost:9092
+  group-id: metrics-topic
